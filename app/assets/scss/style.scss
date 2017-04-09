@@ -1,8 +1,15 @@
-$fontColor: teal;
+$fontColor: purple;
 
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   color: $fontColor;
   font-size: 2.5rem;
+}
+
+p {
+  span {
+    font-style: italic;
+    color: red;
+  }
 }
