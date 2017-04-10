@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 browserSync = require('browser-sync').create();
 
 
-// Watch Tasks
+// Watching Tasks
 gulp.task('watch', function() {
 
   browserSync.init({
@@ -25,21 +25,19 @@ gulp.task('watch', function() {
     gulp.start('scriptsRefresh');
   });
 
+}); // End watch task
 
-});
 
-
-//CSS Inject by Browser
+// Watching changes in Styles
 gulp.task('cssInject', ['styles'], function() {
-  return gulp.src('./app/temp/css/style.css')
+  return gulp.src('./app/dist/css/style.css')
     .pipe(browserSync.stream());
 });
 
+// Watching changes in Scripts
 gulp.task('scriptsRefresh', ['scripts'], function() {
   browserSync.reload();
 });
-
-
 
 // Default Task Call - just 'gulp'
 gulp.task('default', ['watch']);

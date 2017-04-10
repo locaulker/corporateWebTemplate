@@ -1,25 +1,6 @@
-$fontColor: brown;
-
-body {
-  // display: flex;
-  border-radius: 50%;
-  transform: translateX(12px);
-}
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  color: $fontColor;
-  font-size: 2.5rem;
-}
-
-h1:hover {
-  transition: color 1.1s ease;
-}
-
-p {
-  span {
-    font-style: italic;
-    color: purple;
-  }
-}
+@import "base/_basic-reset";
+// @import "normalize.css";
+// @import "vendors/_bootstrap.min.css";
+@import "base/_variables";
+@import "base/_global";
+@import "modules/_testing-section";
