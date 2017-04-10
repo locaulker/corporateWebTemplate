@@ -1,4 +1,10 @@
-$fontColor: purple;
+$fontColor: brown;
+
+body {
+  // display: flex;
+  border-radius: 50%;
+  transform: translateX(12px);
+}
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -7,9 +13,13 @@ h1 {
   font-size: 2.5rem;
 }
 
+h1:hover {
+  transition: color 1.1s ease;
+}
+
 p {
   span {
     font-style: italic;
-    color: red;
+    color: purple;
   }
 }
