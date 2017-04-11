@@ -39,5 +39,6 @@ gulp.task('scriptsRefresh', ['scripts'], function() {
   browserSync.reload();
 });
 
+
 // Default Task Call - just 'gulp'
 gulp.task('default', ['watch']);
