@@ -13,10 +13,9 @@ var gulp = require('gulp'),
 // Styles: SCSS to CSS
 gulp.task('styles', function() {
   var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
-  // var scssFiles;
 
   // For Development change outputStyle to expanded if necessary
-  var args = {outputStyle: 'compressed'}
+  var args = {outputStyle: 'expanded', precision: 2}
   var args2 = [autoprefixer({browsers: ['last 2 versions']})];
 
   // Change return gulp.src('./app/assets/scss/style.scss') like below

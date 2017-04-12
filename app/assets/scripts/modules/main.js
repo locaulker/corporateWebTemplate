@@ -3,7 +3,7 @@ global.jQuery = require('jquery');
      mustache = require('mustache');
 
 jQuery(document).ready(function(){
-  alert("Hello");
+  // alert("Hello");
 });
 
 var name = ' Lorenzo A';
