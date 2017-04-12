@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     plumber = require('gulp-plumber'),
+    browserify = require('gulp-browserify'),
     sourcemaps = require('gulp-sourcemaps');
 
 
@@ -17,7 +18,8 @@ gulp.task('scripts', function() {
     }))
     .pipe(sourcemaps.init())
     .pipe(uglify())
-    .pipe(concat('scripts.js'))
-    .pipe(sourcemaps.write())
+    .pipe(concat('bundle.js'))
+    .pipe(browserify())
+    .pipe(sourcemaps.write('../../../maps'))
     .pipe(gulp.dest('./app/dist/scripts'))
 });
