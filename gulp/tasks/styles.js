@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 // Styles: SCSS to CSS
 gulp.task('styles', function() {
-  var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
+  var bootstrapCSS = gulp.src('./node_modules/bootstrap/temp/css/bootstrap.css');
 
   // For Development change outputStyle to expanded if necessary
   var args = {outputStyle: 'expanded', precision: 2}
@@ -32,5 +32,5 @@ gulp.task('styles', function() {
   return merge(scssFiles, bootstrapCSS)
     .pipe(concat('style.css'))
     .pipe(sourcemaps.write('../../../maps'))
-    .pipe(gulp.dest('./app/dist/css'))
+    .pipe(gulp.dest('./app/temp/css'))
 });

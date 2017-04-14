@@ -17,5 +17,5 @@ gulp.task('images', function() {
 
   return gulp.src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')
     .pipe(imagemin(imgArgs))
-    .pipe(gulp.dest('./app/dist/images'))
+    .pipe(gulp.dest('./app/temp/images'))
 });

@@ -1,6 +1,12 @@
-// Libraries & Helpers
+// Libraries
 // --------------------------------
 @import "normalize.css";
+
+
+// Helpers - mixins & functions go here
+// --------------------------------
+@import "helpers/_element-invisible";
+@import "helpers/_clearfix";
 
 
 // Variables

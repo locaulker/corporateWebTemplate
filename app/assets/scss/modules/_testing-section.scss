@@ -3,12 +3,15 @@ body {
   border-radius: 50%;
   transform: translateX(12px);
 
+
+
   h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     color: $fontColor;
     font-size: 3.9rem;
     padding-bottom: 15px;
+  
   }
 
   h1:hover {

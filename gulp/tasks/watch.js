@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 
 // Watching changes in Styles
 gulp.task('cssInject', ['styles'], function() {
-  return gulp.src('./app/dist/css/style.css')
+  return gulp.src('./app/temp/css/style.css')
     .pipe(browserSync.stream());
 });
 

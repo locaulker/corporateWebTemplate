@@ -21,5 +21,5 @@ gulp.task('scripts', function() {
     .pipe(concat('bundle.js'))
     .pipe(browserify())
     .pipe(sourcemaps.write('../../../maps'))
-    .pipe(gulp.dest('./app/dist/scripts'))
+    .pipe(gulp.dest('./app/temp/scripts'))
 });

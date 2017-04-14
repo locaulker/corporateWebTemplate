@@ -6,7 +6,7 @@ global.jQuery = require('jquery');
 jQuery(document).ready(function(){
   // alert("Hello");
 
-  $("h1").css('color', 'green');
+  // $("h1").css('color', 'green');
 
 });
 
