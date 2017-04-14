@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
+    // uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     plumber = require('gulp-plumber'),
     browserify = require('gulp-browserify'),
@@ -17,7 +17,7 @@ gulp.task('scripts', function() {
       this.emit('end');
     }))
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat('bundle.js'))
     .pipe(browserify())
     .pipe(sourcemaps.write('../../../maps'))

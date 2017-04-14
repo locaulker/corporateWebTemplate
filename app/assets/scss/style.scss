@@ -1,5 +1,39 @@
-// @import "base/_basic-reset";
+// Libraries & Helpers
+// --------------------------------
 @import "normalize.css";
-@import "base/_variables";
-@import "base/_global";
+
+
+// Variables
+// --------------------------------
+@import "variables/_colors";
+
+
+// Reset and Base Files
+// --------------------------------
+@import "base/_base";
+@import "base/_border-box";
+
+
+// Modules
+// --------------------------------
 @import "modules/_testing-section";
+
+
+// Layouts
+// --------------------------------
+
+
+// Objects
+// --------------------------------
+
+
+// Components
+// --------------------------------
+
+
+// Utilities
+// --------------------------------
+
+
+// Other
+// --------------------------------
