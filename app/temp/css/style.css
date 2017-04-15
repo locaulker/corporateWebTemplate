@@ -1,4 +1,37 @@
 @import url(../../bower_components/normalize-css/normalize.css);
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
 h1, h2, h3, h4, h5, h6,
 ul, li,
 p,
@@ -50,12 +83,6 @@ body {
   border-radius: 50%;
   -webkit-transform: translateX(12px);
           transform: translateX(12px);
-}
-
-body .susy-test {
-  width: 47.37%;
-  float: left;
-  margin-right: 5.26%;
 }
 
 body h1 {

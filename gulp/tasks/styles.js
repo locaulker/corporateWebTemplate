@@ -17,14 +17,6 @@ function errorHandler(err) {
 
 // Styles: SCSS to CSS
 gulp.task('styles', function() {
-<<<<<<< HEAD
-  var bootstrapCSS = gulp.src('./node_modules/bootstrap/temp/css/bootstrap.css');
-
-  // For Development change outputStyle to expanded if necessary
-  var args = {outputStyle: 'expanded', precision: 2}
-  var args2 = [autoprefixer({browsers: ['last 2 versions']})];
-=======
->>>>>>> build-task
 
   return gulp.src('./app/assets/scss/style.scss')
     .pipe(plumber())
