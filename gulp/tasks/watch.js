@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 
 // Watching changes in Styles
 gulp.task('cssInject', ['styles'], function() {
-  return gulp.src('./app/dist/css/style.css')
+  return gulp.src('./app/temp/css/style.css')
     .pipe(browserSync.stream());
 });
 
@@ -41,4 +41,6 @@ gulp.task('scriptsRefresh', ['scripts'], function() {
 
 
 // Default Task Call - just 'gulp'
-gulp.task('default', ['clean', 'images', 'moveFonts', 'styles', 'scripts', 'watch']);
+// gulp.task('default', ['clean', 'images', 'moveFonts', 'styles', 'scripts', 'watch']);
+
+gulp.task('default', ['images', 'styles', 'scripts', 'watch']);

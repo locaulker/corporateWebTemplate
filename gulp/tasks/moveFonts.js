@@ -5,5 +5,5 @@ var bootstrapFonts = './node_modules/bootstrap/dist/fonts/*.{eot,svg,ttf,woff,wo
 //Move Bootstrap Fonts
 gulp.task('moveFonts', function() {
   gulp.src(bootstrapFonts)
-    .pipe(gulp.dest('./app/dist/fonts'))
+    .pipe(gulp.dest('./app/temp/fonts'))
 });

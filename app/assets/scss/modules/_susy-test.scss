@@ -1,0 +1,17 @@
+.susy-test {
+  @include span(2);
+}
+
+.section {
+  background-color: green;
+}
+
+.flex {
+  display: flex;
+}
+
+.border-radius {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
