@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // var $ = require("jquery");
 global.jQuery = require('jquery');
     bootstrap = require('bootstrap');
@@ -7,8 +8,10 @@ jQuery(document).ready(function(){
   // alert("Hello");
 
   // $("h1").css('color', 'green');
+=======
+$(document).ready(function() {
+  // $("h1").css('color', 'green');
+  console.log($);
+>>>>>>> build-task
 
 });
-
-// var name = ' Lorenzo A. Brandon';
-// document.write('Hello, ' + name + '!');

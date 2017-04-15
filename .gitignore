@@ -29,4 +29,9 @@ _notes
 dwsync.xml
 _exerciseFiles/
 maps/
+<<<<<<< HEAD
 temp/
+=======
+dist/
+bower_components/
+>>>>>>> build-task

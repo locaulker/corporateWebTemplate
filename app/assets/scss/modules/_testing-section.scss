@@ -3,11 +3,17 @@ body {
   border-radius: 50%;
   transform: translateX(12px);
 
+<<<<<<< HEAD
 
+=======
+  .susy-test {
+    @include span(2);
+  }
+>>>>>>> build-task
 
   h1 {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     color: $fontColor;
     font-size: 3.9rem;
     padding-bottom: 15px;
@@ -26,6 +32,13 @@ body {
       line-height: 1.7rem;
       font-size: 110%;
     }
+  }
+
+  p.para {
+    color: $paraColor;
+    font-style: italic;
+    font-size: 130%;
+    line-height: 2rem;
   }
 
 }

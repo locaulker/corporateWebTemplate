@@ -7,12 +7,12 @@ imageminJpegRecompress = require('imagemin-jpeg-recompress');
 gulp.task('images', function() {
 
   var imgArgs = [
-    imagemin.gifsicle(),
-    imagemin.jpegtran(),
-    imagemin.optipng(),
-    imagemin.svgo(),
-    imageminPngquant(),
-    imageminJpegRecompress()
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({plugins: [{removeViewBox: true}]})
+    // imageminPngquant(),
+    // imageminJpegRecompress()
   ];
 
   return gulp.src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')

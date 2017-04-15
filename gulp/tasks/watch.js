@@ -41,4 +41,6 @@ gulp.task('scriptsRefresh', ['scripts'], function() {
 
 
 // Default Task Call - just 'gulp'
-gulp.task('default', ['clean', 'images', 'moveFonts', 'styles', 'scripts', 'watch']);
+// gulp.task('default', ['clean', 'images', 'moveFonts', 'styles', 'scripts', 'watch']);
+
+gulp.task('default', ['images', 'styles', 'scripts', 'watch']);

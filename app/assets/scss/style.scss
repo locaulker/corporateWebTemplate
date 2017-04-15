@@ -1,6 +1,7 @@
 // Libraries
 // --------------------------------
-@import "normalize.css";
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../bower_components/susy/sass/susy";
 
 
 // Helpers - mixins & functions go here
@@ -23,6 +24,7 @@
 // Modules
 // --------------------------------
 @import "modules/_testing-section";
+@import "modules/_susy-test";
 
 
 // Layouts
