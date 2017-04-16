@@ -122,6 +122,57 @@ body p.para {
   margin-right: 5.26%;
 }
 
+.github {
+  background-image: url(../images/sprites.png);
+  background-position: -149px 0px;
+  width: 142px;
+  height: 120px;
+}
+
+.facebook {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -120px;
+  width: 121px;
+  height: 120px;
+}
+
+.github {
+  background-image: url(../images/sprites.png);
+  background-position: -149px 0px;
+  width: 142px;
+  height: 120px;
+}
+
+.twitter {
+  background-image: url(../images/sprites.png);
+  background-position: 0px 0px;
+  width: 149px;
+  height: 120px;
+}
+
+.youtube {
+  background-image: url(../images/sprites.png);
+  background-position: -121px -120px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Fallback */
+.github {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 142px;
+  height: 120px;
+}
+
+/* Retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .github {
+    background-image: url(sprites@2x.png);
+    background-size: 282px 240px;
+  }
+}
+
 .section {
   background-color: green;
 }
