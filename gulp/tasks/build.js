@@ -10,52 +10,48 @@ uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
 
-// gulp.task('previewDist', function() {
-//
-//   browserSync.init({
-//     notify: false,
-//     server: {
-//       baseDir: "dist"
-//     }
-//   });
-//
-// });
-//
-//
-// gulp.task('deleteDistFolder', function() {
-//   return del("./dist");
-// });
+gulp.task('previewDist', function() {
 
-// // Optimize Images
-// gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-//   var imgArgs = [
-//     imagemin.gifsicle({interlaced: true}),
-//     imagemin.jpegtran({progressive: true}),
-//     imagemin.optipng({optimizationLevel: 5}),
-//     imagemin.svgo({plugins: [{removeViewBox: true}]}),
-//     imageminPngquant(),
-//     imageminJpegRecompress()
-//   ];
-//
-//   return gulp.src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')
-//     .pipe(imagemin(imgArgs))
-//     .pipe(gulp.dest('/assets/images'));
-// });
-//
-//
-// gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
-//   return gulp.src('./app/index.html')
-//     .pipe(usemin({
-//       css: [function() {return rev()}, function() {return cssnano()}],
-//       js: [function() {return rev()}, function() {return uglify()}]
-//     }))
-//     .pipe(gulp.dest('dist'));
-// });
-//
-//
-// // Run build task
-// gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: "dist"
+    }
+  });
+
+});
 
 
-// ============================================================= //
-// New build begins
+gulp.task('deleteDistFolder', function() {
+  return del("./dist");
+});
+
+// Optimize Images
+gulp.task('optimizeImages', ['deleteDistFolder'], function() {
+  var imgArgs = [
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({plugins: [{removeViewBox: true}]}),
+    // imageminPngquant(),
+    // imageminJpegRecompress()
+  ];
+
+  return gulp.src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')
+    .pipe(imagemin(imgArgs))
+    .pipe(gulp.dest('/assets/images'));
+});
+
+
+gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
+  return gulp.src('./app/index.html')
+    .pipe(usemin({
+      css: [function() {return rev()}, function() {return cssnano()}],
+      js: [function() {return rev()}, function() {return uglify()}]
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+
+// Run build task
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);

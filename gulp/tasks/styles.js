@@ -4,9 +4,11 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
-    sourcemaps = require('gulp-sourcemaps');
-    // concat = require('gulp-concat');
-    // merge = require('merge-stream');
+    sourcemaps = require('gulp-sourcemaps'),
+    cssnano = require('gulp-cssnano'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat');
+
 
 
 function errorHandler(err) {
@@ -26,7 +28,9 @@ gulp.task('styles', function() {
       includePaths: ['app/bower_components']
     }))
     .pipe(autoprefixer())
-    // .pipe(concat('style.css'))
+    .pipe(concat('styles.css'))
+    .pipe(cssnano('styles.css'))
+    .pipe(rename('styles.min.css'))
     .pipe(sourcemaps.write('../../../maps'))
-    .pipe(gulp.dest('./app/temp/css'))
+    .pipe(gulp.dest('./app/public/css'))
 });

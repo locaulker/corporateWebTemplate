@@ -10,12 +10,12 @@ gulp.task('images', function() {
     imagemin.gifsicle({interlaced: true}),
     imagemin.jpegtran({progressive: true}),
     imagemin.optipng({optimizationLevel: 5}),
-    imagemin.svgo({plugins: [{removeViewBox: true}]})
-    // imageminPngquant(),
-    // imageminJpegRecompress()
+    imagemin.svgo({plugins: [{removeViewBox: true}]}),
+    imageminPngquant(),
+    imageminJpegRecompress()
   ];
 
   return gulp.src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')
     .pipe(imagemin(imgArgs))
-    .pipe(gulp.dest('./app/temp/images'))
+    .pipe(gulp.dest('./app/public/images'))
 });
