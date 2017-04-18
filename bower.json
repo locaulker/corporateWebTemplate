@@ -20,6 +20,7 @@
     "susy": "^2.2.12",
     "bootstrap": "^3.3.7",
     "normalize-css": "normalize.css#^6.0.0",
-    "ResponsiveGridSystem": "*"
+    "ResponsiveGridSystem": "*",
+    "font-awesome": "^4.7.0"
   }
 }

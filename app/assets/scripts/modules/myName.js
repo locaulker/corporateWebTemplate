@@ -1,3 +1,3 @@
 // Simple JavaScript
-var name = ' Lorenzo A. Brandon';
-document.write('Hello, ' + name + '!');
+// var name = ' Lorenzo A. Brandon';
+// document.write('Hello, ' + name + '!');
