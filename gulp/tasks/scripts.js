@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
+    // uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
+    // rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
     sourcemaps = require('gulp-sourcemaps');
 
@@ -17,9 +17,9 @@ gulp.task('scripts', function() {
       this.emit('end');
     }))
     .pipe(sourcemaps.init())
-    .pipe(concat('bundle.js'))
-    .pipe(rename('bundle.min.js'))
-    .pipe(uglify())
+    .pipe(concat('scripts.js'))
+    // .pipe(rename('scripts.min.js'))
+    // .pipe(uglify())
     .pipe(sourcemaps.write('../../../maps'))
     .pipe(gulp.dest('./app/public/scripts'))
 });

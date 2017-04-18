@@ -1,7 +1,6 @@
 {
-  "name": "mygulp-sass-workflow",
+  "name": "corporate-web-template",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +29,16 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.0",
     "merge-stream": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locaulker/corporateWebTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/locaulker/corporateWebTemplate/issues"
+  },
+  "homepage": "https://github.com/locaulker/corporateWebTemplate#readme",
+  "description": ""
 }

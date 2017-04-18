@@ -5,8 +5,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
     sourcemaps = require('gulp-sourcemaps'),
-    cssnano = require('gulp-cssnano'),
-    rename = require('gulp-rename'),
+    // cssnano = require('gulp-cssnano'),
+    // rename = require('gulp-rename'),
     concat = require('gulp-concat');
 
 
@@ -19,7 +19,7 @@ function errorHandler(err) {
 // Styles: SCSS to CSS
 gulp.task('styles', function() {
 
-  return gulp.src('./app/assets/scss/style.scss')
+  return gulp.src('./app/assets/scss/styles.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -29,8 +29,8 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefixer())
     .pipe(concat('styles.css'))
-    .pipe(cssnano('styles.css'))
-    .pipe(rename('styles.min.css'))
+    // .pipe(cssnano('styles.css'))
+    // .pipe(rename('styles.min.css'))
     .pipe(sourcemaps.write('../../../maps'))
     .pipe(gulp.dest('./app/public/css'))
 });
