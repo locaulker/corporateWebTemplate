@@ -3,8 +3,31 @@
 @import "../../bower_components/normalize-css/normalize.css";
 @import "../../bower_components/susy/sass/susy";
 
-h1 {
-  color: teal;
-  font-weight: 100;
-  font-size: 34px;
-}
+
+/* VARIABLES */
+/* ----------------------------------------- */
+@import "variables/_colors";
+
+
+
+/* BASIC SETUP */
+/* ----------------------------------------- */
+@import "global/_global";
+
+
+
+/* REUSEABLE COMPONENTS */
+/* ----------------------------------------- */
+@import "reusable-components/_headings";
+
+
+
+
+
+/* SECTIONS */
+/* ----------------------------------------- */
+@import "sections/_header-section";
+@import "sections/_owl-carousel";
+@import "sections/_section-slider";
+@import "sections/_section-services";
+@import "sections/_section-portfolio";

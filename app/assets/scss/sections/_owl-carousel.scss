@@ -1,0 +1,44 @@
+
+.section-slider {
+  background-color: #f4f4f4;
+  // background: url(images/sliders/slider-bg.png);
+  // background-size: 100% 100%;
+  padding: 0 0 40px 0;
+
+
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .text-block {
+    margin: 20px 30px 40px;
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    a {
+      padding: 10px 25px;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: all 0.3s ease-in;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:last-child {
+      margin-left: 5px;
+    }
+
+    a.cta1:hover {background-color: #ff695a;}
+    a.cta2:hover {background-color: #3f9cfa;}
+
+  }
+
+}

@@ -1,0 +1,26 @@
+/* ------ HEADINGS ------ */
+body {
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    // color: $h1Color;
+    color: green;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 180%;
+  }
+
+  // h2 {
+  //   font-size: 150%;
+  //   color: $h2Color;
+  // }
+
+  h3 {
+    font-size: 95%;
+    color: $h3Color;
+    margin: 0 0 10px 0;
+  }
+}

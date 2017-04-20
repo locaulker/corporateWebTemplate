@@ -10,14 +10,20 @@
 
     <title>Corporate Web Template Development</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+
+    <!-- Owl-Carousel Basic Stylesheet -->
+    <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+
+    <!-- Owl-Carousel Default Theme -->
+    <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.theme.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles.css">
@@ -30,17 +36,144 @@
   </head>
   <body>
 
-  <h1>Web Template Development</h1>
+  <header class="secondary-dark-blue-bg">
+      <div class="container">
+        <div class="row">
+          <a href="/"><img src="public/images/logo/logo.png" alt="Logo"></a>
+          <nav class="menu" id="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Our Works</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div><!-- ./row -->
+      </div><!-- /.container -->
+    </header>
 
-  <br>
+  <section class="section-slider">
+      <div class="container">
+        <div id="owl-demo" class="owl-carousel owl-theme">
 
-  <p>Lorem ipsum dolor sit, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="item text-center">
+            <div class="text-block">
+              <h1>Welcome to <span class="primary">Corporate</span></h1>
+              <p>It is a long established fact that a reader will be distracted by the readable<br> content of a page when loading it at its layout</p>
+              <!-- <a href="" class="primary-bg cta1">Get Started</a>
+              <a href="" class="secondary-dark-blue-bg cta2">Contact Us</a> -->
+            </div><!-- /text-block -->
+            <!-- <img src="public/images/sliders/fullimage1.jpg" alt="The Last of us"> -->
+          </div><!-- /.item -->
 
-  <br>
+          <div class="item text-center">
+            <div class="text-block clearfix">
+              <h1>Welcome to <span class="primary">Corporate</span></h1>
+              <p>It is a long established fact that a reader will be distracted by the readable<br> content of a page when loading it at its layout</p>
+              <!-- <a href="" class="primary-bg cta1">Get Started</a>
+              <a href="" class="secondary-dark-blue-bg cta2">Contact Us</a> -->
+            </div><!-- /text-block -->
+            <!-- <img src="public/images/sliders/fullimage1.jpg" alt="The Last of us"> -->
+          </div><!-- /.item -->
+
+          <div class="item text-center">
+            <div class="text-block">
+              <h1>Welcome to <span class="primary">Corporate</span></h1>
+              <p>It is a long established fact that a reader will be distracted by the readable<br> content of a page when loading it at its layout</p>
+              <!-- <a href="" class="primary-bg cta1">Get Started</a>
+              <a href="" class="secondary-dark-blue-bg cta2">Contact Us</a> -->
+            </div><!-- /text-block -->
+            <!-- <img src="public/images/sliders/fullimage1.jpg" alt="The Last of us"> -->
+          </div><!-- /.item -->
+
+        </div><!-- /.owl-demo carousel -->
+    </div><!-- /.container -->
+  </section><!-- /.slider -->
+
+  <section class="section-servises services">
+    <div class="container">
+      <div class="row">
+        <div class="services-header text-center">
+          <h1>Services</h1>
+          <p class="lead">It is a long established fact that a reader will be distracted by the readable<br> content of a page when loading it at its layout</p>
+        </div><!-- /.services-header -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-laptop"></i></p>
+          <h3 class="box-header">Web Design</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-edit"></i></p>
+          <h3 class="box-header">Graphics Design</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-cog"></i></p>
+          <h3 class="box-header">PSD to HTML/CSS</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row">
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-bars"></i></p>
+          <h3 class="box-header">WordPress</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-leaf"></i></p>
+          <h3 class="box-header">Theme Development</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+        <div class="col-md-4 text-center box">
+          <p><i class="fa fa-globe"></i></p>
+          <h3 class="box-header">Unlimited Support</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. minim veniam, quis nostrud exercitation</p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- /.services -->
+
+
+  <section class="portfolio">
+    <row>
+      <div class="row">
+        <div class="services-header text-center">
+          <h1>Portfolio</h1>
+          <p class="lead">It is a long established fact that a reader will be distracted by the readable<br> content of a page when loading it at its layout</p>
+        </div><!-- /.services-header -->
+      </div>
+    </row>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="public/scripts/scripts.js"></script>
 
