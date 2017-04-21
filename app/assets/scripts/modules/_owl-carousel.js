@@ -12,21 +12,48 @@ $(document).ready(function() {
      itemsDesktopSmall : false,
      itemsTablet: false,
      itemsMobile : false,
+
      autoPlay: false,
      responsive: true
 
  });
 
- // $(window).scroll(function() {
- //
- //  var top = $(window).scrollTop();
- //
- //    if(top >= 112) {
- //      $("header").addClass('scroll-bg');
- //    } else if ($("header").hasClass('secondary-dark-blue-bg')) {
- //      $("header").removeClass('secondary-dark-blue-bg');
- //    }
- //
- // });
+  $(document).ready(function() {
+
+    $("#owl-demo2").owlCarousel({
+
+        navigation : true, // Show next and prev buttons
+        pagination: true,
+        responsive: true,
+
+        // autoPlay: 8000, //Set AutoPlay to 3 seconds
+
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3],        // itemsTablet: [768,2],
+        itemsMobile : [479,1]
+
+    });
+
+  });
+
+  $(document).ready(function() {
+
+    $("#owl-demo3").owlCarousel({
+
+        navigation : true, // Show next and prev buttons
+        pagination: true,
+        responsive: true,
+
+        // autoPlay: 8000, //Set AutoPlay to 3 seconds
+
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3],        // itemsTablet: [768,2],
+        itemsMobile : [479,1]
+
+    });
+
+  });
 
 });

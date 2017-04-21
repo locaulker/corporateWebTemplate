@@ -1,4 +1,59 @@
 .portfolio {
+
+
+
   padding: 56px 0;
-  background-color: #f4f4f4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/public/images/progect/portfolio-bg.jpg');
+  // background-color: #e9a02e;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+
+  h1, .lead {
+    color: $h1-Portfolio;
+  }
+
+  // h1 {color: #34495e;}
+
+  #owl-demo .item2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    color: white;
+  }
+
+  .owl-controls {
+    margin-top: 20px;
+  }
+
+  .overlay-content {
+    h3, p, a {
+      padding: 0;
+      margin: 0;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    p, a {
+      font-size: 85%;
+      font-weight: bold;
+      color: #fff;
+      margin: 0;
+
+      a { color: $secondary-Sky-Blue-Color}
+    }
+
+    .owl-content {
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 30px;
+    }
+
+
+
+  }
+
+
 }
