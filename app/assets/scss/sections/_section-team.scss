@@ -22,6 +22,13 @@
     margin-top: 20px;
   }
 
+  .item3 img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 1px solid #000;
+  }
+
   .overlay-content2 {
     h3, p, a {
       padding: 0;
@@ -29,6 +36,7 @@
       color: #333;
       margin-top: 10px;
     }
+
 
     h3.name {
       font-weight: bold;
