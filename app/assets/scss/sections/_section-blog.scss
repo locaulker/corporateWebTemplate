@@ -1,0 +1,32 @@
+.blog {
+  padding: 56px 0;
+
+  .container {
+
+    h3.post-name {
+      color: $secondary-Sky-Blue-Color;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in;
+
+      a {text-decoration: none;}
+      a:hover {color: #589ce0;}
+    }
+    p {
+      padding: 0;
+      margin: 0 0 10px 0;
+      font-size: 85%;
+    }
+
+    img {margin-right: 20px;}
+    img:last-child {margin-right: 0px;}
+
+    .date {
+      color: #333;
+    }
+
+  }
+
+}
