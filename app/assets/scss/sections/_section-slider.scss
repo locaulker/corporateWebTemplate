@@ -1,8 +1,36 @@
 .section-slider {
-  h1 {color: #34495e}
+  // h1 {color: #34495e}
 
   .item {
       margin-top: 150px;
+
+      h1 {
+        color: #34495e;
+        font-weight: 300;
+        font-size: 48px;
+      }
+
+      .btn {
+        font-size: 16px;
+        border: none;
+      }
+
+      .btn-primary {
+        color: #fff;
+        background-color: #e74c3c;
+      }
+      .btn-primary:hover {
+        background-color: #d62c1a;
+      }
+
+      .btn-secondary {
+        background-color: #34495e;
+        color: #fff;
+        // border: 1px solid #34495e;
+      }
+      .btn-secondary:hover {
+        background-color: #46627f;
+      }
 
   }
 }

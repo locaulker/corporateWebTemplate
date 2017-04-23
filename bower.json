@@ -22,6 +22,7 @@
     "normalize-css": "normalize.css#^6.0.0",
     "ResponsiveGridSystem": "*",
     "font-awesome": "^4.7.0",
-    "owlcarousel": "^1.3.2"
+    "owlcarousel": "^1.3.2",
+    "slicknav": "^1.0.10"
   }
 }

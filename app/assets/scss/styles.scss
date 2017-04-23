@@ -18,13 +18,13 @@
 
 /* REUSEABLE COMPONENTS */
 /* ----------------------------------------- */
-@import "reusable-components/_headings";
+// @import "reusable-components/_headings";
 
 
 
 /* SECTIONS */
 /* ----------------------------------------- */
-@import "sections/_header-section";
+@import "sections/_section-site-header";
 @import "sections/_owl-carousel";
 @import "sections/_section-slider";
 @import "sections/_section-services";
@@ -35,3 +35,9 @@
 @import "sections/_section-contact";
 @import "sections/_section-footer";
 @import "sections/_section-copyright";
+
+
+
+/* SECTIONS */
+/* ----------------------------------------- */
+@import "responsive/_responsive";
