@@ -12,13 +12,9 @@
 
 /* BASIC SETUP */
 /* ----------------------------------------- */
+@import "global/_page-loader";
 @import "global/_global";
 
-
-
-/* REUSEABLE COMPONENTS */
-/* ----------------------------------------- */
-// @import "reusable-components/_headings";
 
 
 
@@ -41,3 +37,8 @@
 /* SECTIONS */
 /* ----------------------------------------- */
 @import "responsive/_responsive";
+
+
+/* REUSEABLE COMPONENTS */
+/* ----------------------------------------- */
+@import "reusable-components/_animations";

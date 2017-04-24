@@ -1,0 +1,15 @@
+.animation {
+  opacity: 0;
+}
+
+.services {
+
+  p i {
+    transition: all 0.4s ease-in;
+  }
+
+  p i:hover {
+    transform: scale(1.25,1.25);
+    cursor: pointer;
+  }
+}
