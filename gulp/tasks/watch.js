@@ -41,5 +41,5 @@ gulp.task('scriptsRefresh', ['scripts'], function() {
 
 
 
-// gulp.task('default', ['styles', 'scripts', 'images','sprites', 'watch']);
-gulp.task('default', ['sprites', 'styles', 'scripts', 'watch']);
+gulp.task('default', ['styles', 'scripts', 'images','sprites', 'watch']);
+// gulp.task('default', ['sprites', 'styles', 'scripts', 'watch']);
